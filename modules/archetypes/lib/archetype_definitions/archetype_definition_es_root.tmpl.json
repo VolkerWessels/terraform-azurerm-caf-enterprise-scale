@@ -160,7 +160,8 @@
       "Application-Owners",
       "Network-Management",
       "Security-Operations",
-      "Subscription-Owner"
+      "Subscription-Owner",
+      "Enforce-Mandatory-Tags"
     ],
     "archetype_config": {
       "parameters": {},
