@@ -94,7 +94,8 @@ locals {
       resource_id          = contains(keys(local.convert_role_definition_name_to_id), role) ? "${local.provider_path.role_definition}${local.convert_role_definition_name_to_id[role]}" : null
       resource_id_path     = local.provider_path.role_definition
       scope_id             = local.scope_id
-      template             = local.archetype_role_definitions_map[local.convert_role_definition_name_to_id[role]]
+      #template             = local.archetype_role_definitions_map[local.convert_role_definition_name_to_id[role]]
+      template = contains(keys(local.convert_role_definition_name_to_id), role) ? local.archetype_role_definitions_map[local.convert_role_definition_name_to_id[role]] : null
       role_definition_name = "[${basename(upper(local.scope_id))}] ${local.archetype_role_definitions_map[local.convert_role_definition_name_to_id[role]].properties.roleName}"
     }
   ]
