@@ -17,7 +17,7 @@ locals {
 locals {
   azurerm_role_definition_enterprise_scale = {
     for definition in local.es_role_definitions :
-   #definition.resource_id => definition
+    definition.resource_id => definition
     if definition.resource_id != null
   }
 }
