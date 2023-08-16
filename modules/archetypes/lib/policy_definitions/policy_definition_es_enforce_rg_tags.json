@@ -34,7 +34,7 @@
             ]
         },
         "then": {
-            "effect": "deny"
+            "effect": "audit"
         }
         },
         "parameters": {

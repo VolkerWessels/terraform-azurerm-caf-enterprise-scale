@@ -13,7 +13,7 @@
         "parameters": {
             "effect": {
                 "type": "String",
-                "defaultValue": "deny",
+                "defaultValue": "audit",
                 "allowedValues": [
                     "audit",
                     "deny",
