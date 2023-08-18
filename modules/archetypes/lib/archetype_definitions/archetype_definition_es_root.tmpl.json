@@ -13,13 +13,9 @@
       "Deploy-Resource-Diag",
       "Deploy-VM-Monitoring",
       "Deploy-VMSS-Monitoring",
-      "Enforce-ACSB",
-      "Enforce-Mandatory-Tags"
+      "Enforce-ACSB"
     ],
     "policy_definitions": [
-      "Enforce-RG-Tags",
-      "Enforce-Resource-Tags",
-      "Deny-NIC-NSG",
       "Append-AppService-httpsonly",
       "Append-AppService-latestTLS",
       "Append-KV-SoftDelete",
@@ -157,8 +153,7 @@
       "Enforce-ALZ-Sandbox",
       "Enforce-Encryption-CMK",
       "Enforce-EncryptTransit",
-      "Enforce-Guardrails-KeyVault",
-      "Enforce-Mandatory-Tags"
+      "Enforce-Guardrails-KeyVault"
     ],
     "role_definitions": [
       "Network-Subnet-Contributor",
